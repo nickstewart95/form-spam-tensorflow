@@ -6,7 +6,7 @@ I wanted to see if I could catch common form spam with an AI model
 
 ### The Model
 
-I used (liner.ai)[liner.ai] to generate a model that has two classes, `Good` and `Bad`. I grabbed spam and non spam submissions out of a specific form and turned each form
+I used [liner.ai](liner.ai) to generate a model that has two classes, `Good` and `Bad`. I grabbed spam and non spam submissions out of a specific form and turned each form
 entry into a `field reponse | field reponse ` line, whcih I then grab and categorized.
 
 ## Node
