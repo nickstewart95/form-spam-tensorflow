@@ -1,6 +1,20 @@
 # form-spam-tensorflow
 
-I wanted to see if I could catch common form spam with an AI model
+Catching form spam with an AI model and TensorFlow.js.... The spam is very specific to a client website and it's getting past both Cloudflare and Recaptcha, so I wanted to try a new approach.
+
+NOT PRODUCTION READY
+
+## Screenshots
+
+Posting form data to my Express.js server endpoint, `check`
+
+Sample POST requests with dummy data
+
+Not Spam
+![Not Spam](screenshots/not-spam.png)
+
+Spam
+![Spam](screenshots/spam.png)
 
 ## Notes
 
@@ -13,4 +27,5 @@ entry into a `field reponse | field reponse ` line, whcih I then grab and catego
 
 ## Node
 
+<<<<<<< HEAD
 It uses Node.js with Express.js to run the server. Tensorflow.js handles the actual AI stuff... This is using Node 16
