@@ -27,5 +27,4 @@ entry into a `field reponse | field reponse ` line, whcih I then grab and catego
 
 ## Node
 
-<<<<<<< HEAD
 It uses Node.js with Express.js to run the server. Tensorflow.js handles the actual AI stuff... This is using Node 16

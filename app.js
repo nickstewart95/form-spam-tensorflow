@@ -4,7 +4,7 @@ const tf = require('@tensorflow/tfjs-node');
 const { tokenize } = require('./distilbert_tokenise.js');
 const validator = require('validator');
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3532;
 
 // 1 minute 40 requests
 const limiter = rateLimit({
