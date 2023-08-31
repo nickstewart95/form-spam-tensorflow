@@ -2,11 +2,14 @@ const express = require('express');
 const rateLimit = require('express-rate-limit');
 const tf = require('@tensorflow/tfjs-node');
 const { tokenize } = require('./distilbert_tokenise.js');
+const validator = require('validator');
 
 const port = process.env.PORT || 8080;
+
+// 1 minute 40 requests
 const limiter = rateLimit({
-	windowMs: 15 * 60 * 1000, // 15 minutes
-	max: 100, // maximum of 100 requests within 15 minutes,
+	windowMs: 60 * 1000,
+	max: 40,
 	message: 'Rate limit',
 });
 
@@ -23,7 +26,7 @@ async function server() {
 
 		data = Object.keys(data)
 			.map(function (k) {
-				return data[k];
+				return validator.escape(data[k]);
 			})
 			.join(' | ');
 
